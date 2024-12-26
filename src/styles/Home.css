@@ -1,0 +1,108 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #6a1b9a, #9c27b0); /* 그라데이션 배경 */
+    padding: 20px 40px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #9c27b0; /* 헤더 아래쪽에 선 추가 */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    text-transform: uppercase; /* 대문자화 */
+    letter-spacing: 2px; /* 글자 간격 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* 텍스트 그림자 */
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #fdfbfb, #ebedee);
+    font-family: 'Arial', sans-serif;
+    margin-top: 40px;
+}
+
+.home-inner-container {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+}
+
+.home-header {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4b0082;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.home-description-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    min-height: 50px;
+}
+
+.home-description {
+    font-size: 1.3rem;
+    color: #333;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    animation: typing 3s steps(30, end), blink 0.5s step-end infinite alternate;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: #4b0082;
+    }
+}
+
+.home-button {
+    background-color: #4b0082;
+    color: white;
+    font-size: 1.3rem;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.home-button:hover {
+    background-color: #3b0072;
+    transform: scale(1.1); /* 버튼에 확대 효과 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* 호버 시 그림자 추가 */
+}
+
